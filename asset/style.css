@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.bg-2{
+    background-image: url(img/church-mountain-bg.jpg);
+}
+.bg-1{
+    background-image: url(img/church-man-hope.jpg);
+}
+.bg-3{
+    background-image: url(img/church-man-sea.jpg);
+}
+.h-300px{
+    height: 300px;
+}
+.bg-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.carousel-height{
+    height: 40em;
+    /* max-height: 300px; */
+}
+
+.carousel-title{
+    font-size: 40px;
+    text-overflow: clip;
+    word-wrap: break-word;
+}
+.carousel-header{
+    font-size: 60px;
+    text-overflow: clip;
+    word-wrap: break-word;
+}
+.text-shadow{
+    text-shadow: grey 2px 2px 2px;
+}
+.fa-lg{
+    line-height: 1.5;
+}
+.bg-green{
+    background-color: #0e4f2d;
+}
+.border-green{
+    border: solid 2px #0e4f2d !important;
+}
+.mx-w-100{
+    max-width: 100px;
+}
+.vs-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(220,222,35,255);
+}
+.text-dark-2{
+    color: rgb(222, 215, 195);
+}
+.bg-lemon{
+    background-color: rgba(220,222,35,255);
+}
+.btn-lemon{
+    background-color: rgba(220,222,35,255);
+    color: #0e4f2d !important;
+}
+.border-lemon{
+    border: solid 2px rgba(220,222,35,255);
+}
+.border-r-lemon{
+    border-right: solid 1px rgba(220,222,35,255);
+    
+}
+.text-lemon{
+    color: rgba(220,222,35,255);
+}
+.btn-lemon:hover{
+    background-color: #0e4f2d;
+    color: rgba(220,222,35,255) !important;
+    border: solid 1px rgba(220,222,35,255);
+}
+.place-center{
+    display: grid;
+    place-items: center;
+}
+.bg-dark-trans{
+    background-color: #0e4f2d6c ;
+}
+.inivisible-time{
+    display: contents;
+}
+@media screen and (max-width: 768px) {
+    .carousel-title{
+        font-size: 35px;
+    }
+    .carousel-header{
+        font-size: 45px;
+    }
+    .prg-title{
+        font-size: 30px;
+    }
+    .inivisible-time{
+        display: none;
+    }
+}
+/* @media screen and () {
+    
+} */
