@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a, h1, h2, h3, h4, h5, h6, p{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+a:hover{
+    text-decoration: none;
+}
+*:focus{
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.nav-link{
+    font-size: x-small;
+    margin-right: 15px;
+    color: white;
+}
+.vs-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(220,222,35,255);
+}
+.text-dark-2{
+    color: rgb(222, 215, 195);
+}
+.fa-1-5x{
+    font-size: x-large;
+}
+.banner{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/river.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30em;
+}
+.banner-2{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/church-man-hope.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 80vh; */
+}
+.fa-lg{
+    line-height: 1.5;
+}
+.bg-green{
+    background-color: #0e4f2d;
+}
+.border-green{
+    border: solid 2px #0e4f2d !important;
+}
+
+.bg-lemon{
+    background-color: rgba(220,222,35,255);
+}
+.btn-lemon{
+    background-color: rgba(220,222,35,255);
+    color: #0e4f2d !important;
+}
+.btn-lemon:hover{
+    background-color: #0e4f2d;
+    color: rgba(220,222,35,255) !important;
+    border: solid 1px rgba(220,222,35,255);
+}
+.border-lemon{
+    border: solid 2px rgba(220,222,35,255);
+}
+.border-r-lemon{
+    border-right: solid 1px rgba(220,222,35,255);
+    
+}
+.text-lemon{
+    color: rgba(220,222,35,255);
+}
+.btn-green{
+    background-color: #0e4f2d;
+    /* color: rgba(220,222,35,255) !important; */
+}
+.btn-green:hover{
+    background-color: rgba(220,222,35,255);
+    color: var(--dark) !important;
+    border: solid 1px rgba(220,222,35,255);
+}
+.place-center{
+    display: grid;
+    place-items: center;
+}
+.bg-dark-trans{
+    background-color: #0e4f2d6c ;
+}
+.inivisible-time{
+    display: contents;
+}
+/* @media screen and (max-width: 600px) {
+    .banner-3{
+        height: 100vh;
+    }
+} */
+/* @media screen and (min-width: 700px) {
+    .banner-2{
+        height: 80vh;
+    }
+} */
+.banner-3{
+    /* z-index: -99; */
+    /* position: absolute; */
+    background-image: url("img/church-mountain-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+.bg-warning-hover{
+    background-color: #e3b018;
+    color: white;
+}
+.bg-warning-hover:hover{
+    background-color: black;
+    color: white;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+.btn-white:hover{
+    background-color: black;
+    color: white;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.card:hover{
+    box-shadow: rgba(217, 217, 217, 0.222) 2px 2px 10px;
+    cursor: pointer;
+}
+.card-s{
+    box-shadow: #0e4f2d30 0px 0px 10px 0px;
+    cursor: pointer;
+    height: 100%;
+}
+.line{
+    height: 10px;
+    width: 20px;
+    padding: 10px;
+}
+.bg-black{
+    background-color: rgb(20, 23, 28);
+}
+.shadow{
+    box-shadow: rgba(189, 188, 188, 0.105) 0px 0px 2px 3px;   
+}
+.card-cotent {
+    height: 100%;
+    /* box-shadow: rgba(189, 188, 188, 0.263) 0px 0px 2px 2px;    */
+}
+.card-content img{
+    height: 200px;
+}
+.img{
+    height: 200px;
+}
+.popup{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.501);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+}
+.popup-body{
+    height: 300px;
+    width: 400px
+}
+.w-200x{
+    padding: 0px !important;
+    display: grid;
+    place-content: center;
+    width: 80px;
+    height: 100px;
+    margin: 10px;
+}
+.w-300x{
+    padding: 0px !important;
+    display: grid;
+    place-content: center;
+    width: 90px;
+    height: 90px;
+    box-shadow: #000000f2 2px 2px 5px;
+}
+.event-calendar{
+    border: solid 1px white;
+    border-top: solid white 5px;
+    border-bottom: solid white 5px;
+}
+.sermon-plate img{
+    height: 180px;
+
+}
+.banner-about{
+    background-image: url("img/river.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.text-lemon{
+    color: rgba(220,222,35,255);
+}
