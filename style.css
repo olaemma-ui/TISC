@@ -41,7 +41,7 @@ html{
 .banner{
     /* z-index: -99; */
     /* position: absolute; */
-    background-image: url("img/river.jpg");
+    background-image: url("img/bothNatural.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,11 +50,12 @@ html{
 .banner-2{
     /* z-index: -99; */
     /* position: absolute; */
-    background-image: url("img/church-man-hope.jpg");
+    background-image: url("img/nab6qo9ll_.jfif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     /* height: 80vh; */
+    height: 30em;
 }
 .fa-lg{
     line-height: 1.5;
@@ -120,11 +121,11 @@ html{
 .banner-3{
     /* z-index: -99; */
     /* position: absolute; */
-    background-image: url("img/church-mountain-bg.jpg");
+    background-image: url("img/bothDark.jfif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100vh; */
+    height: 30em;
 }
 .bg-warning-hover{
     background-color: #e3b018;
@@ -141,6 +142,13 @@ html{
 .btn-white:hover{
     background-color: black;
     color: white;
+}
+.color{
+    background-color: rgba(0, 7, 0, 0.619);
+    height: 100%;
+    display: grid;
+    place-items:center;
+    /* padding-bottom: 30px; */
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -216,7 +224,7 @@ a{
 
 }
 .banner-about{
-    background-image: url("img/river.jpg");
+    background-image: url("img/bothNatural.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
