@@ -13,9 +13,7 @@
 </head>
 <body>
     <nav class="navbar bg-white justify-content-center justify-content-md-between border">
-        <a class="navbar-brand text-warning text-center fa-1-5x" href="index.html">
-            <img src="img/tisc.jpeg" class="logo" alt="">
-        </a>
+    
 
         <ul class="navbar nav justify-content-center">
             <li class="nav-item mr-3">
@@ -33,9 +31,9 @@
     </nav>
     <nav class="navbar navbar-expand-md bg-green p-0 pl-2 sticky-top">
         <div class="container">
-                    <!-- Brand -->
-            <a class="navbar-brand border-lemon text-light pl-3 pr-3 p-0 m-1" href="index.html">
-                TISC
+            <!-- Brand -->  
+            <a class="navbar-brand text-light pl-3 pr-3 p-0 m-1" href="index.html">
+                <img src="img/tisc.jpeg" class="logo" alt="">
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -209,26 +207,32 @@
             </div>
 
             <div class="col-md-4">
-                <div class="sermon-plate rounded mb-2 mt-2 shadow">
-                    <img src="img/OIP.jfif" class="w-100" alt="">
-                    <div class="align-items-center justify-content-between pl-2 pb-2 w-100">
+                <div class="row rounded mb-2 place-center mt-2">
+                    <div class="col-md-4 p-">
+                        <img src="img/OIP.jfif" class="rounded " style="height: 100px;" alt="">
+                    </div>
+                    <div class="col-md-8 p-">
+                        <div class="align-items-center justify-content-between pl-2 pb-2 w-100">
 
-                        <p class="m-0 text-green font-weight-bold fa-md">
-                            Jacob Story
-                        </p>
-                      
-                        <div class="d-flex align-items-center">
-                            <i class="fa fa-user-circle pr-1 text"></i>
-                            <p class="m-0 font-weight-bold text-green fa-md">
+                            <p class="m-0 text-green font-weight-bold fa-md">
+                                Jacob Story
+                            </p>
+                          
+                            <p class="m-0 fa-md">
                                 Pst. Church pastor
                             </p>
+                            
+                            <div class="d-flex flex-wrap mt-1">
+                                    
+                                <button class="btn bg-transparent mb-1 mr-3 border pl-4 pt-1 pb-1 pr-4 p-0">
+                                    <i class="fa fa-play"></i>
+                                </button>
+                                
+                                <button class="btn bg-transparent mb-1 mr-3 border pl-4 pt-1 pb-1 pr-4 p-0">
+                                    <i class="fa fa-download"></i>
+                                </button>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-start">
-                            <p class="m-0 text-green fa-md">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            </p>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -491,6 +495,23 @@
     </div>   
 
     <script>
+
+        var play = false;
+        document.querySelectorAll('.audioSermons').forEach((element, index) => {
+            element.addEventListener('click', () => {
+                play =! play;
+                (play)
+                    ? (()=>{
+                        document.querySelectorAll('audio')[index].play();
+                        document.querySelectorAll('.audio-icon')[index].classList.replace('fa-play-circle', 'fa-pause-circle')
+                    })()
+                    : (()=>{
+                        document.querySelectorAll('audio')[index].pause();
+                        document.querySelectorAll('.audio-icon')[index].classList.replace('fa-pause-circle','fa-play-circle')
+                    })()
+            });
+        });
+
         document.querySelector("#subscribe").addEventListener("click", function (e) {
             document.querySelector("#p").classList.remove('invisible');
         });
